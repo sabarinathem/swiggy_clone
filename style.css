@@ -1,22 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Matemasie&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Gilroy';
-    src: url("gilroy/Gilroy-SemiBold.ttf");
-    font-style:normal;
-  
+.section-heading{
+    font-family: sans-serif;
+    font-size: 23px;
+    
 }
 
-body {
-    font-family: 'Gilroy';
-    letter-spacing: 0;
+body{
+    font-family: "Mukta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+.display-flex{
+    display: flex;
+}
 
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.flex-gap-3px{
+    gap: 3px;
+}
 
 /* header */
 
@@ -110,7 +126,7 @@ header .right-side nav ul li {
 
 .cart-logo-container .zero {
     position: absolute;
-    top: 2px;
+    top: -1px;
     left: 6px;
     font-weight: 600;
     font-size: 14px;
@@ -130,7 +146,7 @@ header .right-side nav ul li ._2MSid {
 
 section.section-1 {
     width: 100%;
-    max-width: 984px;
+    max-width: 1100px;
     margin: 0 auto;
     margin-top: 5rem;
 }
@@ -188,7 +204,7 @@ section.section-1 .container .items-1 .arrows button i {
 .hr-line {
     border: 1px solid rgba(2, 6, 12, 0.05);
     width: 100%;
-    max-width: 984px;
+    max-width: 1100px;
     margin: 32px auto;
 }
 
@@ -199,7 +215,7 @@ section.section-1 .container .items-1 .arrows button i {
 /* Section 2 */
 section.section-2 {
     width: 100%;
-    max-width: 984px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -246,7 +262,7 @@ section.section-2 .container .items-2 {
     display: flex;
     gap: 24px;
     margin-top: 16px;
-    max-width: 1000px;
+    max-width: 1100px;
     /* background-color: red; */
     overflow: hidden;
 }
@@ -272,11 +288,12 @@ section.section-2 .container .items-2 .item .details {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    font-size: 20px;
 }
 
 section.section-2 .container .items-2 .item .rev-container {
     display: flex;
-    height: 35px;
+    font-size: 18px;
 }
 
 section.section-2 .container .items-2 .item .rev-container .review {
@@ -284,6 +301,7 @@ section.section-2 .container .items-2 .item .rev-container .review {
     height: 100%;
     align-items: center;
     gap: 4px;
+  
 }
 
 section.section-2 .container .items-2 .item .rev-container .delivery-time {
@@ -295,8 +313,7 @@ section.section-2 .container .items-2 .item .rev-container .delivery-time {
 
 
 section.section-2 .container .items-2 .item .categories {
-    /* font-family: Gilroy; */
-    font-weight: 200;
+    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.3px;
@@ -304,11 +321,11 @@ section.section-2 .container .items-2 .item .categories {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
 }
 
 section.section-2 .container .items-2 .item .location {
-    /* font-family: Gilroy; */
-    font-weight: 200;
+    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.3px;
@@ -322,7 +339,7 @@ section.section-2 .container .items-2 .item .location {
 .hr-line {
     border: 1px solid rgba(2, 6, 12, 0.05);
     width: 100%;
-    max-width: 984px;
+    max-width: 1100px;
     margin: 32px auto;
 }
 
@@ -332,7 +349,7 @@ section.section-2 .container .items-2 .item .location {
 
 section.section-3 {
     width: 100%;
-    max-width: 984px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -374,6 +391,32 @@ section.section-3 .container .items-1 .arrows button i {
     font-size: 22px;
 }
 
+section.section-3 .container .menu{
+    margin: 24px 0;
+}
+
+section.section-3 .container .menu .items{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+section.section-3 .container .menu .items .item{
+    display: flex;
+    border-radius: 18px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(2, 6, 12, 0.15);
+    padding: 6px 12px;
+    display: inline-grid;
+    width: max-content;
+    grid-auto-flow: column;
+    gap: 8px;
+    box-shadow: rgba(2, 6, 12, 0.04) 0px 2px 12px;
+    transition: 100ms ease-in;
+    font-size: 14px;
+
+}
+
 
 section.section-3 .container .items-2 {
     display: grid;
@@ -387,7 +430,7 @@ section.section-3 .container .items-2 {
 
 
 section.section-3 .container .items-2 .item {
-    width: 220px;
+    width: 244px;
     /* background-color: yellowgreen; */
 }
 
@@ -410,7 +453,7 @@ section.section-3 .container .items-2 .item .details {
 
 section.section-3 .container .items-2 .item .rev-container {
     display: flex;
-    height: 35px;
+    font-size: 18px;
 }
 
 section.section-3 .container .items-2 .item .rev-container .review {
@@ -429,8 +472,7 @@ section.section-3 .container .items-2 .item .rev-container .delivery-time {
 
 
 section.section-3 .container .items-2 .item .categories {
-    /* font-family: Gilroy; */
-    font-weight: 200;
+    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.3px;
@@ -441,8 +483,7 @@ section.section-3 .container .items-2 .item .categories {
 }
 
 section.section-3 .container .items-2 .item .location {
-    /* font-family: Gilroy; */
-    font-weight: 200;
+    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.3px;
@@ -499,7 +540,7 @@ section.section-4 .container .items .item {
 
 section.section-4 .container .items .item .content {
 
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.3px;
@@ -558,7 +599,7 @@ section.section-5 .container .items .item {
 
 section.section-5 .container .items .item .content {
 
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.3px;
@@ -617,7 +658,7 @@ section.section-6 .container .items .item {
 
 section.section-6 .container .items .item .content {
 
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.3px;
@@ -709,7 +750,7 @@ footer .app-download .container .item-2 img {
 }
 
 .footer-content .container .item .company {
-    font-weight: 200;
+    font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.3px;
@@ -734,7 +775,7 @@ footer .app-download .container .item-2 img {
 
 .footer-content .container .item ul li a {
     text-decoration: none;
-    font-weight: 200;
+    font-weight: 600;
     font-size: 16px;
     margin: 16px 0;
     letter-spacing: -0.3px;
